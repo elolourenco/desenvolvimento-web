@@ -1,0 +1,86 @@
+/* Reset básico para limpar margens padrão */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Estilização do corpo (centralizar conteúdo) */
+.body {
+    background-color: #f0f2f5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.h1 {
+    color: #1a73e8;
+    margin-bottom: 10px;
+}
+
+.p {
+    color: #5f6368;
+    margin-bottom: 20px;
+}
+
+/* Estilização do Formulário */
+#meuFormulario {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+    max-width: 400px;
+}
+
+/* Estilo do Campo de Texto */
+input[type="text"] {
+    padding: 12px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+input[type="text"]:focus {
+    border-color: #1a73e8;
+}
+
+/* Estilo dos Botões */
+button {
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: transform 0.2s, background-color 0.3s;
+}
+
+/* Botão de Enviar (dentro do form) */
+button[type="submit"] {
+    background-color: #1a73e8;
+    color: white;
+}
+
+button[type="submit"]:hover {
+    background-color: #1557b0;
+    transform: scale(1.02);
+}
+
+/* Botão "Clique aqui" */
+#meuBotao {
+    background-color: #34a853;
+    color: white;
+    margin-bottom: 20px;
+}
+
+#meuBotao:hover {
+    background-color: #2d8e47;
+}
